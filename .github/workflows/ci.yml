@@ -1,6 +1,14 @@
 name: Run Tests
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main  # Runs CI on push to the main branch
+  pull_request:
+    branches:
+      - main  # Runs CI on pull requests to main
+  workflow_dispatch:  # 👈 This allows manual triggering
+
 
 jobs:
   test:
