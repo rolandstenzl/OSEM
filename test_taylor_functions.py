@@ -1,6 +1,6 @@
 import pytest
 import math
-from functions import factorial, taylor_sin, taylor_cos, taylor_tan, taylor_exp
+from taylorapproximation_trigonometric_functions import factorial, taylor_sin, taylor_cos, taylor_tan, taylor_exp
 
 # Test function for factorial
 # Ensures correct computation of factorial values
