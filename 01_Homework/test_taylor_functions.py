@@ -1,5 +1,7 @@
 import pytest
 import math
+
+
 from taylorapproximation_trigonometric_functions import (
     factorial,
     taylor_sin,
@@ -52,8 +54,3 @@ def test_taylor_exp():
     assert pytest.approx(taylor_exp(x, 10), rel=1e-3) == math.exp(
         x
     )  # Check approximation within small error margin
-
-
-# Run tests if script is executed directly
-if __name__ == "__main__":
-    pytest.main()
