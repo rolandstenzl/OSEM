@@ -31,10 +31,9 @@ jobs:
       - name: Run Ruff format check
         run: ruff format --check
 
-      - name: Debug pytest test collection
-        run: pytest --collect-only
       # Run tests
       - name: Run tests
-        run: pytest Homework1/
+        run: pytest --rootdir=Homework1
+
 
 
