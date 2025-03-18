@@ -33,7 +33,7 @@ jobs:
 
       # Run tests
       - name: Run tests
-        run: pytest --rootdir=Homework1
+        run: pytest --rootdir= ./Homework1
 
 
 
