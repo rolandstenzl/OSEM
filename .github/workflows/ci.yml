@@ -32,11 +32,7 @@ jobs:
         run: ruff format --check
 
       - name: Debug pytest test collection
-        run: pytest --collect-only
-
-      # Run tests
-      # - name: Run tests
-      #   run: pytest --rootdir= ./Homework1
+        run: pytest
 
 
 
